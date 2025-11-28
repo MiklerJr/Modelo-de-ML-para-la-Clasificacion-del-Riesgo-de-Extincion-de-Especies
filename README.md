@@ -3,17 +3,15 @@
 En esta experiencia, trabajaremos con un dataset que contiene datos ecológicos, biológicos y geográficos sobre diversas especies terrestres. El objetivo es **clasificar el riesgo de extinción** de estas especies en categorías definidas por la **UICN** (Unión Internacional para la Conservación de la Naturaleza), utilizando una variedad de rasgos morfológicos y ambientales.
 
 En este análisis, las especies se clasifican en **categorías de amenaza** que incluyen:  
-- **LC**: Preocupación Menor  
-- **VU**: Vulnerable  
-- **EN**: En Peligro  
-- **CR**: En Peligro Crítico
+- **En Peligro**
+- **No en Peligro**
 
 ### **Transformación de la columna `Status`**:
 
 La columna **`Status`** originalmente contenía las siguientes categorías: **LC**, **NT**, **VU**, **EN**, **CR**, **EW**, **EX**. Para simplificar la clasificación en el modelo predictivo, estas categorías se redujeron a **dos clases**:
 
-- **En Peligro (1)**: Incluye las especies clasificadas como **VU (Vulnerable)**, **EN (En Peligro)**, **CR (En Peligro Crítico)**, **EW (Extinta en la Naturaleza)**.
-- **No en Peligro (0)**: Incluye las especies clasificadas como **LC (Preocupación Menor)**, **NT (Casi Amenazada)**, **EX (Extinta)**.
+- **En Peligro (1)**: Incluye las especies clasificadas como **VU (Vulnerable)**, **EN (En Peligro)**, **CR (En Peligro Crítico)**, **EW (Extinta en la Naturaleza)**, **EX (Extinta)**.
+- **No en Peligro (0)**: Incluye las especies clasificadas como **LC (Preocupación Menor)**, **NT (Casi Amenazada)**.
 
 
 ### **Descripción de los atributos:**
